@@ -11,6 +11,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
+    ecmaVersion: 2022,
   },
   rules: {
     // Ajoute ici tes règles personnalisées si besoin
