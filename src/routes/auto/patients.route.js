@@ -15,7 +15,7 @@ const patients = [
 router.get('/api/patients', (_req, res) => res.status(200).json(patients))
 
 router.post('/api/patients', (req, res) => {
-  const { name, age } = req.body ?? {}
+  const { name, age } = req.body
   if (typeof name !== 'string' || !name.trim() || !Number.isInteger(age) || age <= 0) {
     return res.status(400).json({ error: 'Missing or invalid fields (name: string, age: positive integer)' })
   }

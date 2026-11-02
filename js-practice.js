@@ -35,11 +35,11 @@ const patient = {
   name: 'Alice Martin',
   age: 34,
   conditions: ['diabetes', 'hypertension'],
-  doctor: { name: 'Dr. Lee', speciality: 'Cardiology' }
+  doctor: { name: 'Dr. Lee', specialty: 'Cardiology' }
 }
 console.log(patient.doctor.name)
 console.log(patient.conditions.length)
-console.log(`${patient.name} is treated by ${patient.doctor.name} (${patient.doctor.speciality}).`)
+console.log(`${patient.name} is treated by ${patient.doctor.name} (${patient.doctor.specialty}).`)
 patient.conditions.push('anxiety')
 console.log(patient)
 
